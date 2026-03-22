@@ -38,104 +38,73 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         TimDieuKhien();
+        //gắn bộ lắng nghe sự kiện và code xử lí cho từng nút
+        View.OnClickListener boLangNgheCong = new View.OnClickListener() {
+            @Override
+            public void onClick (View view) {
+                XULY_CONG();
+
+            }
+        };
+        nutCong.setOnClickListener(boLangNgheCong);
+        // cach viet 2
+        nutTru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XULY_TRU();
+
+            }
+        });
+
+        nutNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XULY_NHAN();
+            }
+        });
+
+        nutChia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XULY_CHIA();
+            }
+        });
     }
 
-
-    //Xử lý cộng
-        public void XuLyCong(View v){
-        //Code xu ly cong
-        //b1.Lay du lieu tu 2 so
-        //b1.1 Tim edit text so 1 va 2
-
-        //b1.2 lay du lieu tu 2 dieu khien
-        String soThu1= editTextSo1.getText().toString();
-        String soThu2= editTextSo2.getText().toString();
-
-        //b1.3 chuyen du lieu chuoi sang so
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-        //b2 tinh toan
-        float Tong = soA + soB;
-        //b3 hien ket qua
-        //b3.1
-
-        //b3.2 chuan bi du lieu xuat bien thanh dnag chuoi
-        String chuoiKQ = String.valueOf(Tong);
-        //B3.3 cho ket qua len dk
+    void XULY_CONG() {
+        String so1= editTextSo1.getText().toString();
+        String so2= editTextSo2.getText().toString();
+        float num1 = Float.parseFloat(so1);
+        float num2 = Float.parseFloat(so2);
+        float tong = num1 + num2 ;
+        String chuoiKQ = String.valueOf(tong);
         editTextKQ.setText(chuoiKQ);
     }
-
-
-
-    //Xử lý tru
-    public void XuLyTru(View v){
-        //Code xu ly tru
-        //b1.Lay du lieu tu 2 so
-        //b1.1 Tim edit text so 1 va 2
-
-        //b1.2 lay du lieu tu 2 dieu khien
-        String soThu1= editTextSo1.getText().toString();
-        String soThu2= editTextSo2.getText().toString();
-
-        //b1.3 chuyen du lieu chuoi sang so
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-        //b2 tinh toan
-        float Hieu = soA - soB;
-        //b3 hien ket qua
-        //b3.1
-
-        //b3.2 chuan bi du lieu xuat bien thanh dnag chuoi
-        String chuoiKQ = String.valueOf(Hieu);
-        //B3.3 cho ket qua len dk
-        editTextKQ.setText(chuoiKQ);
-
-    }
-    //Xử lý nhan
-    public void XuLyNhan(View v){
-        //Code xu ly nhan
-        //b1.Lay du lieu tu 2 so
-        //b1.1 Tim edit text so 1 va 2
-
-        //b1.2 lay du lieu tu 2 dieu khien
-        String soThu1= editTextSo1.getText().toString();
-        String soThu2= editTextSo2.getText().toString();
-
-        //b1.3 chuyen du lieu chuoi sang so
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-        //b2 tinh toan
-        float Tich = soA * soB;
-        //b3 hien ket qua
-        //b3.1
-
-        //b3.2 chuan bi du lieu xuat bien thanh dnag chuoi
-        String chuoiKQ = String.valueOf(Tich);
-        //B3.3 cho ket qua len dk
+    void XULY_TRU() {
+        String so1= editTextSo1.getText().toString();
+        String so2= editTextSo2.getText().toString();
+        float num1 = Float.parseFloat(so1);
+        float num2 = Float.parseFloat(so2);
+        float tong = num1 - num2 ;
+        String chuoiKQ = String.valueOf(tong);
         editTextKQ.setText(chuoiKQ);
     }
-    //Xử lý chia
-    public void XuLyChia(View v){
-        //Code xu ly chia
-        //Code xu ly cong
-        //b1.Lay du lieu tu 2 so
-        //b1.1 Tim edit text so 1 va 2
-
-        //b1.2 lay du lieu tu 2 dieu khien
-        String soThu1= editTextSo1.getText().toString();
-        String soThu2= editTextSo2.getText().toString();
-
-        //b1.3 chuyen du lieu chuoi sang so
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-        //b2 tinh toan
-        float Thuong = soA / soB;
-        //b3 hien ket qua
-        //b3.1
-
-        //b3.2 chuan bi du lieu xuat bien thanh dnag chuoi
-        String chuoiKQ = String.valueOf(Thuong);
-        //B3.3 cho ket qua len dk
+    void XULY_NHAN() {
+        String so1= editTextSo1.getText().toString();
+        String so2= editTextSo2.getText().toString();
+        float num1 = Float.parseFloat(so1);
+        float num2 = Float.parseFloat(so2);
+        float tong = num1 * num2 ;
+        String chuoiKQ = String.valueOf(tong);
+        editTextKQ.setText(chuoiKQ);
+    }
+    void XULY_CHIA() {
+        String so1= editTextSo1.getText().toString();
+        String so2= editTextSo2.getText().toString();
+        float num1 = Float.parseFloat(so1);
+        float num2 = Float.parseFloat(so2);
+        float tong = num1 / num2 ;
+        String chuoiKQ = String.valueOf(tong);
         editTextKQ.setText(chuoiKQ);
     }
 }
