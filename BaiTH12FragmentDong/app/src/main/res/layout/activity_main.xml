@@ -11,7 +11,7 @@
         android:id="@+id/frameContentHoder"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#FFEB3B"
+        android:background="#2196F3"
         app:layout_constraintBottom_toTopOf="@+id/frameFooterHoder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/frameFooterHoder"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:background="#03A9F4"
+        android:background="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
