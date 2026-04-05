@@ -1,7 +1,0 @@
-lhq.cntt2.baith12fragmentdong.app-pngs-0 E:\Java\65132839-AndroidPrograming\BaiTH12FragmentDong\app\build\generated\res\pngs\debug
-lhq.cntt2.baith12fragmentdong.app-updated_navigation_xml-1 E:\Java\65132839-AndroidPrograming\BaiTH12FragmentDong\app\build\generated\updated_navigation_xml\debug
-lhq.cntt2.baith12fragmentdong.app-packageDebugResources-2 E:\Java\65132839-AndroidPrograming\BaiTH12FragmentDong\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-lhq.cntt2.baith12fragmentdong.app-packageDebugResources-3 E:\Java\65132839-AndroidPrograming\BaiTH12FragmentDong\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-lhq.cntt2.baith12fragmentdong.app-debug-4 E:\Java\65132839-AndroidPrograming\BaiTH12FragmentDong\app\build\intermediates\merged_res\debug\mergeDebugResources
-lhq.cntt2.baith12fragmentdong.app-debug-5 E:\Java\65132839-AndroidPrograming\BaiTH12FragmentDong\app\src\debug\res
-lhq.cntt2.baith12fragmentdong.app-main-6 E:\Java\65132839-AndroidPrograming\BaiTH12FragmentDong\app\src\main\res
