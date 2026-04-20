@@ -1,6 +1,8 @@
 package thigk2.lehoangquan;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -32,7 +34,7 @@ public class TinhThanhActivity extends AppCompatActivity {
 
         // Bước 2: Tạo dữ liệu mẫu (danh sách tỉnh/thành)
         String[] danhSachTinhThanh = {
-                "Hà Nội",
+                "Lê Hoàng Quân",
                 "Hồ Chí Minh",
                 "Đà Nẵng",
                 "Hải Phòng",
@@ -42,11 +44,6 @@ public class TinhThanhActivity extends AppCompatActivity {
                 "Khánh Hòa",
                 "Quảng Ninh",
                 "Thừa Thiên Huế",
-                "Lâm Đồng",
-                "Bà Rịa - Vũng Tàu",
-                "Long An",
-                "Tiền Giang",
-                "Bến Tre"
         };
 
         // Bước 3: Tạo Adapter (cầu nối giữa dữ liệu và ListView)
@@ -68,5 +65,13 @@ public class TinhThanhActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT
             ).show();
         });
+
+    }
+    public void QuayVe (View v) {
+        //tao doi tuong intent
+        //Tham số thứ 2 của ham tạo này, là tên Activity ( màn hình ) ta muốn chuyển sang
+        Intent iManHinhCHINH = new Intent(this, MainActivity.class);
+        //Thuc hien chuyen
+        startActivity(iManHinhCHINH);
     }
 }
