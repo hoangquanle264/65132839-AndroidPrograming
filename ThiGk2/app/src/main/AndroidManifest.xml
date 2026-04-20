@@ -15,6 +15,12 @@
             android:name=".TinhThanhActivity"
             android:exported="false" />
         <activity
+            android:name=".TinhThanh"
+            android:exported="false" />
+        <activity
+            android:name=".ChiTietTinhActivity"
+            android:exported="false" />
+        <activity
             android:name=".TinhActivity"
             android:exported="false" />
         <activity
