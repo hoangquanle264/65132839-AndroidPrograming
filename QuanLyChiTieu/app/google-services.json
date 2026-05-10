@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442184812233",
+    "project_id": "android-projects-ad54f",
+    "storage_bucket": "android-projects-ad54f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442184812233:android:b464a846561ccac9cd6f18",
+        "android_client_info": {
+          "package_name": "lhq.cntt2.quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_HPakr1_ENQgexESFNdop05_nQdqyKZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
